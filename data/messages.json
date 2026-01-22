@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1769104027165,
+    "fullName": "Ludovica Storti",
+    "email": "ludostori@gmail.com",
+    "reason": "Order delay",
+    "topic": "Shipping issue",
+    "details": "Hello,\nOn 01.06.2025, I placed an order (Order No: 725926). Although 7 days have passed since the order confirmation, my order still shows as “processing.”\n\nI kindly request your assistance regarding this matter.\n\nThank you, best regards.",
+    "status": "new",
+    "createdAt": "2026-01-22T17:47:07.165Z"
+  },
+  {
+    "id": 1769102215854,
+    "fullName": "Brooke Davis",
+    "email": "brookedaviss@gmail.com",
+    "reason": "Spoiled product",
+    "topic": "Product quality issue",
+    "details": "Hello,\n\nThree days ago, I purchased your Peptide Lip Treatment product (Order No: 543839). Unfortunately, the item has a strong mold odor, which makes it unusable.\n\nI kindly request that this issue be resolved and appropriate action taken.\n\nThank you.",
+    "status": "read",
+    "createdAt": "2026-01-22T17:16:55.854Z"
+  },
+  {
+    "id": 1768330094863,
+    "fullName": "Madison Halton",
+    "email": "maddisonhalton@gmail.com",
+    "reason": "Wrong item received",
+    "topic": "Order issue – incorrect product delivered",
+    "details": "I recently placed an order (Order No: 548865) but received the wrong item instead of the product I purchased. The delivered item does not match the description on my order confirmation. Could you please advise on the return process and send me the correct product? Thank you for your assistance.",
+    "status": "resolved",
+    "createdAt": "2026-01-13T18:48:14.863Z"
+  }
+]

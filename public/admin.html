@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | Rhode</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/admin.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body class="admin-page">
+
+  
+  <header class="navbar">
+        <a href="index.html" class="logo">rhode</a>
+
+
+        <nav class="menu">
+            <a href="shop.html">Shop</a>
+
+            <a href="about.html">About</a>
+            <a href="#">Futures</a>
+            <i class='bx bx-user'></i>
+            <i class='bx bx-shopping-bag'></i>
+        </nav>
+    </header>
+
+  <main class="admin-wrap">
+    <section class="admin-head">
+      <div>
+        <p class="admin-kicker">ADMIN PANEL</p>
+        <h1 class="admin-title">Contact Messages</h1>
+        <p class="admin-sub">Messages submitted from <span>contact.html</span> appear here. Manage status and delete when needed.</p>
+      </div>
+
+      <div class="admin-controls">
+        <label class="admin-filter">
+          <span>Filter</span>
+          <select id="statusFilter">
+            <option value="all">All</option>
+            <option value="new">New</option>
+            <option value="read">Read</option>
+            <option value="resolved">Resolved</option>
+          </select>
+        </label>
+
+        <label class="admin-search">
+          <span>Search</span>
+          <input id="searchInput" type="text" placeholder="name / email / topic..." />
+        </label>
+
+        <button id="refreshBtn" class="admin-btn outline" type="button">Refresh</button>
+      </div>
+    </section>
+
+    <section class="admin-list">
+      <div id="messagesContainer" class="messages-grid"></div>
+      <p id="emptyState" class="empty-state" hidden>No messages yet.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-divider"></div>
+
+    <div class="footer-brand">rhode</div>
+
+    <nav class="footer-links">
+        <a href="contact.html">Contact Us</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+
+    <p class="footer-copy">
+        This website was created as an academic project and does not represent a real commercial platform.
+    </p>
+
+    <div class="footer-newsletter">
+    <p>Glaze your inbox with tips, tricks & exclusive content from Hailey.</p>
+    <form>
+        <input type="email" placeholder="Your email address">
+        <button type="submit">Subscribe</button>
+    </form>
+</div>
+
+</footer>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

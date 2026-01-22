@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rhode</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    
+    <header class="navbar">
+        <a href="index.html" class="logo">rhode</a>
+
+
+        <nav class="menu">
+            <a href="shop.html">Shop</a>
+
+            <a href="about.html">About</a>
+            <a href="#">Futures</a>
+            <i class='bx bx-user'></i>
+            <i class='bx bx-shopping-bag'></i>
+        </nav>
+    </header>
+
+    
+    <section class="hero">
+        <img src="images/hero.jpg" alt="Rhode Hero">
+
+        <div class="hero-text">
+            <p>one of everything really good</p>
+        </div>
+
+        <a href="shop.html" class="shop-btn">SHOP NOW</a>
+    </section>
+
+
+
+    <div class="product-list">
+
+        <div class="product-card">
+            <span class="corner-tag">best seller</span>
+            <div class="card-label">prep</div>
+
+            <div class="hover-cover">
+                <img src="images/product1-hover.jpg" alt="">
+            </div>
+
+            <div class="product-image">
+                <img src="images/product1.jpg" alt="">
+            </div>
+
+            <div class="product-info">
+                <div class="product-footer">
+                    <div class="rating-wrap">
+                        <span class="stars" style="--rating: 4.6;"></span>
+                        <small class="rating-count">(5.994)</small>
+                    </div>
+                    <span class="price">$32.00</span>
+                </div>
+                <h3>GLAZING MILK</h3>
+                <p class="product-desc">Ceramide facial essence</p>
+            </div>
+
+            <button class="buy-bar" type="button">BUY GLAZING MILK - $32.00</button>
+        </div>
+
+        <div class="product-card">
+            <span class="corner-tag">best seller</span>
+            <div class="card-label">seal</div>
+
+            <div class="hover-cover">
+                <img src="images/product2-hover.jpg" alt="">
+            </div>
+
+            <div class="product-image">
+                <img src="images/product2.jpg" alt="">
+            </div>
+
+            <div class="product-info">
+                <div class="product-footer">
+                    <div class="rating-wrap">
+                        <span class="stars" style="--rating: 4.7;"></span>
+                        <small class="rating-count">(1.849)</small>
+                    </div>
+                    <span class="price">$36.00</span>
+                </div>
+                <h3>BARRIER BUTTER</h3>
+                <p class="product-desc">Intensive moisture balm</p>
+            </div>
+
+            <button class="buy-bar" type="button">BUY BARRIER BUTTER - $36.00</button>
+        </div>
+
+
+
+        <div class="product-card">
+            <span class="corner-tag">best seller</span>
+            <div class="card-label">glaze</div>
+
+            <div class="hover-cover">
+                <img src="images/product3-hover.jpg" alt="">
+            </div>
+
+            <div class="product-image">
+                <img src="images/product3.jpg" alt="">
+            </div>
+
+            <div class="product-info">
+                <div class="product-footer">
+                    <div class="rating-wrap">
+                        <span class="stars" style="--rating: 4.2;"></span>
+                        <small class="rating-count">(3.930)</small>
+                    </div>
+
+                    <span class="price">$32.00</span>
+                </div>
+
+                <h3>Peptide Glazing Fluid</h3>
+                <p class="desc">Dewy gel serum</p>
+            </div>
+
+            <button class="buy-bar" type="button">BUY GLAZE - $32.00 </button>
+        </div>
+
+
+
+    </div>
+
+
+    </section>
+
+    <section class="routine-slider">
+        <div class="routine-image">
+            <img id="routineImg" src="images/routine1.jpg" alt="">
+        </div>
+
+        <div class="routine-content">
+            <div class="routine-item active" data-img="images/routine1.jpg">
+                <span>01</span>
+                <h3>thirsty</h3>
+                <p>Skin feels tight and dehydrated, even if it gets oily. Fine lines may appear more visible.</p>
+            </div>
+
+            <div class="routine-item" data-img="images/routine2.jpg">
+                <span>02</span>
+                <h3>dull</h3>
+                <p>Skin looks tired and lacks natural glow. Texture may appear uneven or flat.</p>
+            </div>
+
+            <div class="routine-item" data-img="images/routine3.jpg">
+                <span>03</span>
+                <h3>oily</h3>
+                <p>Skin produces excess oil and looks shiny, especially in the T-zone. Pores may appear larger with
+                    frequent breakouts.</p>
+            </div>
+
+            <div class="routine-item" data-img="images/routine4.jpg">
+                <span>04</span>
+                <h3>sensitive</h3>
+                <p>Skin reacts easily with redness, burning, or irritation. Often feels tight and uncomfortable after
+                    products or weather changes.</p>
+            </div>
+
+            <div class="routine-side-text">
+                HOW IS YOUR<BR>
+                SKIN FEELING?
+            </div>
+
+
+        </div>
+    </section>
+
+    <script>
+        const items = document.querySelectorAll('.routine-item');
+        const image = document.getElementById('routineImg');
+
+        items.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                items.forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+
+                image.style.opacity = 0;
+                setTimeout(() => {
+                    image.src = item.dataset.img;
+                    image.style.opacity = 1;
+                }, 300);
+            });
+        });
+    </script>
+
+    <footer class="footer">
+        <div class="footer-divider"></div>
+
+        <div class="footer-brand">rhode</div>
+
+        <nav class="footer-links">
+            <a href="contact.html">Contact Us</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+
+        <p class="footer-copy">
+            This website was created as an academic project and does not represent a real commercial platform.
+        </p>
+
+        <div class="footer-newsletter">
+            <p>Glaze your inbox with tips, tricks & exclusive content from Hailey.</p>
+            <form>
+                <input type="email" placeholder="Your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
